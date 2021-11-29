@@ -13,7 +13,7 @@ var dbConfig = {
     database: "dbname"
 };
 
-const sqlReq=sql.Request();
+const sqlReq= new sql.Request();
 sql.connect(dbConfig);//'Server=localhost,1433;Database=database;User Id=username;Password=password;Encrypt=true'
 //sql.query`select * from mytable where id = ${value}`        
 app.get('/ping', function (req, res) {
