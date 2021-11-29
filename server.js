@@ -7,8 +7,8 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 //Initializing connection string
 var dbConfig = {
-    user:  "username",
-    password: "password",
+    user:  "sa",
+    password: "123456",
     server: "hostname",
     database: "dbname"
 };
